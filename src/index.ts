@@ -14,6 +14,10 @@ app.use(express.json());
 
 app.use(router);
 
-app.listen(port, () => {
+/*app.listen(port, () => {
   console.log(`[server]: Server is running at http://10.0.2.32:${port}`);
+});*/
+
+app.listen(3002, '0.0.0.0', () => {
+  console.log("Server running on port 3002");
 });
